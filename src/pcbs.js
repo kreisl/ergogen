@@ -289,10 +289,9 @@ exports.parse = (config, points, outlines, units) => {
         // key-level footprints
         for (const [p_name, point] of Object.entries(points)) {
             for (const [f_name, f] of Object.entries(point.meta.footprints || {})) {
-                footprints.push(footprint(f, `${p_name}.footprints.${f_name}`, points, point, net_indexer, component_indexer, units))
+                footprints.push(footprint(f, `${p_name}.footprints.${f_name}`, points, point, net_indexer, component_indexer, units, {references}))
             }
         }
-
         // global one-off footprints
         if (a.type(pcb_config.footprints)() == 'array') {
             pcb_config.footprints = {...pcb_config.footprints}

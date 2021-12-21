@@ -15,13 +15,14 @@
         "coverage": "nyc --reporter=html --reporter=text npm test"
     },
     "dependencies": {
-        "@jscad/openjscad": "github:mrzealot/oldjscad",
-        "fs-extra": "^9.0.1",
-        "js-yaml": "^3.14.0",
-        "kle-serial": "github:mrzealot/kle-serial",
-        "makerjs": "github:mrzealot/maker.js-dist",
-        "mathjs": "^8.1.1",
-        "yargs": "^15.4.1"
+      "@jscad/openjscad": "github:ergogen/oldjscad",
+      "fs-extra": "^10.0.0",
+      "js-yaml": "^3.14.0",
+      "kle-serial": "github:ergogen/kle-serial#ergogen",
+      "makerjs": "github:ergogen/maker.js#ergogen",
+      "mathjs": "^10.0.0",
+      "semver": "^7.3.5",
+      "yargs": "^17.3.0"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^13.0.2",
